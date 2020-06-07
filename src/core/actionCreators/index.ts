@@ -1,12 +1,5 @@
 import * as actions from "../actionTypes";
 
-export function setPosts(posts: Array<any>): actions.SetPostsAction {
-  return {
-    type: actions.SET_POSTS,
-    posts
-  };
-}
-
 export function getPosts(): actions.GetPostsAction {
   return {
     type: actions.GET_POSTS

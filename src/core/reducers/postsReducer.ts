@@ -19,7 +19,7 @@ const initialState: PostsState = {
     error: ''
 };
 
-export default function lyricsReducer(
+export default function postsReducer(
     state: PostsState = initialState,
     action: actions.PostsAction
 ): PostsState {
@@ -30,7 +30,6 @@ export default function lyricsReducer(
                 loading: true,
                 error: ''
             }
-        case actions.SET_POSTS:
         case actions.GET_POSTS_SUCCESS:
             return {
                 ...state,

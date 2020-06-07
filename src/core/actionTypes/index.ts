@@ -1,9 +1,3 @@
-export const SET_POSTS = "SET_POSTS";
-export interface SetPostsAction {
-    type: typeof SET_POSTS;
-    posts: Array<any>;
-}
-
 export const GET_POSTS = "GET_POSTS";
 export interface GetPostsAction {
     type: typeof GET_POSTS;
@@ -27,7 +21,6 @@ export interface GetPostsFailureAction {
 }
 
 export type PostsAction =
-    | SetPostsAction
     | GetPostsAction
     | GetPostsRequestAction
     | GetPostsSuccessAction
